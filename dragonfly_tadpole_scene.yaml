@@ -1,0 +1,32 @@
+box_size: 300
+
+# Entity data definitions
+entities_data:
+  EntitySubTypes:
+    - TADPOLES
+    - DRAGONFLY_LARVAE
+    - POND_STRUCTURE
+
+  Entities:
+    TADPOLES:
+      type: AGENT
+      num: 4
+      existing: 4
+      color: cyan
+      diameter: 5.0
+      prox_dist_max: 10  # Circular vision field
+      prox_cos_min: -1.0  # 360-degree vision
+
+    DRAGONFLY_LARVAE:
+      type: AGENT
+      num: 2
+      existing: 2
+      color: red
+      diameter: 10.0
+      prox_dist_max: 100  # Triangular vision field
+      prox_cos_min: 0.90  # Narrow field of view
+
+    POND_STRUCTURE:
+      type: OBJECT
+      num: 1
+      color: green
