@@ -14,8 +14,8 @@ entities_data:
       existing: 4
       color: cyan
       diameter: 5.0
-      prox_dist_max: 50  # Circular vision field
-      prox_cos_min: -1.0  # 360-degree vision
+      prox_dist_max: 80  # Circular vision field
+      prox_cos_min: -0.7  # 360-degree vision
 
     DRAGONFLY_LARVAE:
       type: AGENT
