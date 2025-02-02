@@ -1,0 +1,51 @@
+log_level: INFO
+num_steps: 10
+default:
+  seed: 0
+  n_dims: 2
+  box_size: 100
+  diameter: 5.0
+  friction: 0.1
+  mass_center: 1.0
+  mass_orientation: 0.125
+  neighbor_radius: None
+  collision_alpha: 0.5
+  collision_eps: 0.1
+  dt: 0.1
+  wheel_diameter: 2.0
+  speed_mul: 1.0
+  max_speed: 10.0
+  theta_mul: 1.0
+  prox_dist_max: 40.0
+  prox_cos_min: 0.0
+  existing_agents: null
+  existing_objects: null
+  entities_data: None
+scene:
+  box_size: 300
+  entities_data:
+    EntitySubTypes:
+    - TADPOLES
+    - DRAGONFLY_LARVAE
+    - POND_STRUCTURE
+    Entities:
+      TADPOLES:
+        type: AGENT
+        num: 4
+        existing: 4
+        color: cyan
+        diameter: 5.0
+        prox_dist_max: 80
+        prox_cos_min: -0.7
+      DRAGONFLY_LARVAE:
+        type: AGENT
+        num: 2
+        existing: 2
+        color: red
+        diameter: 10.0
+        prox_dist_max: 100
+        prox_cos_min: 0.9
+      POND_STRUCTURE:
+        type: OBJECT
+        num: 1
+        color: green
