@@ -23,7 +23,7 @@ entities_data:
       existing: 2
       color: red
       diameter: 10.0
-      prox_dist_max: 100  # Triangular vision field
+      prox_dist_max: 60  # Triangular vision field
       prox_cos_min: 0.90  # Narrow field of view
 
     POND_STRUCTURE:
